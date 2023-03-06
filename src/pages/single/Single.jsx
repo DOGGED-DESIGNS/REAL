@@ -40,7 +40,15 @@ const Single = () => {
 
   if (singleLoad) {
     return (
-      <div className=" container">
+      <div
+        className=" container"
+        style={{
+          width: "100vw",
+          height: "100vh",
+          display: "grid",
+          placeItems: "center",
+        }}
+      >
         <CircularProgress className=" m-auto" />
       </div>
     );
