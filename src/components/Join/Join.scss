@@ -1,0 +1,45 @@
+.join-cover {
+  margin-top: 200px;
+  margin-bottom: 70px;
+}
+.join {
+  &__pad {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  }
+  margin-right: 10px;
+  margin-left: 10px;
+  margin: auto;
+  display: grid;
+  max-width: 1000px;
+  margin-top: 50px;
+  place-items: center;
+  position: relative;
+
+  @media (max-width: 780px) {
+    height: 300px;
+  }
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.choose-btnz {
+  border: 1px solid orange;
+  margin-left: -5px !important;
+  background: rgb(198, 198, 198) !important;
+  color: rgb(80, 80, 80) !important ;
+  box-shadow: none !important;
+  &:hover {
+    background: rgb(224, 223, 223) !important;
+  }
+}

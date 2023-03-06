@@ -1,0 +1,33 @@
+.navz {
+  display: block;
+  @media (max-width: 780px) {
+    display: none;
+  }
+}
+
+.navzz {
+  position: relative;
+}
+.navzz:hover::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  border: 1px solid black;
+  width: 4px;
+  background: blue;
+  left: 50%;
+  display: block;
+
+  top: -5px;
+  transform: translateX(-50%);
+}
+
+.navzz2 {
+  display: none;
+  width: 100%;
+  @media (max-width: 780px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
